@@ -1,4 +1,20 @@
 {
+  "api": {
+    "gameApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "gamenight"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "auth": {
     "gamenight009e67ad": {
       "customAuth": false,
@@ -23,6 +39,73 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "function": {
+    "gamenight": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "players"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_gamenight_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "gamenight"
+        }
+      ]
+    },
+    "AMPLIFY_function_gamenight_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "gamenight"
+        }
+      ]
+    },
+    "AMPLIFY_storage_gamenight4adfd546_bucketName": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "gamenight4adfd546"
+        }
+      ]
+    },
+    "AMPLIFY_storage_gamenight4adfd546_region": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "gamenight4adfd546"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "gamenight4adfd546": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "S3",
+      "serviceType": "imported"
+    },
+    "players": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
     }
   }
 }

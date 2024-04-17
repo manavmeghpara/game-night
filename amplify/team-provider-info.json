@@ -14,6 +14,22 @@
     "categories": {
       "auth": {
         "gamenight009e67ad": {}
+      },
+      "function": {
+        "gamenight": {
+          "deploymentBucketName": "amplify-gamenight-staging-d19ca-deployment",
+          "s3Key": "amplify-builds/gamenight-5a4b336e364655726550-build.zip"
+        }
+      },
+      "storage": {
+        "players": {},
+        "gamenight4adfd546": {
+          "bucketName": "amplify-gamenight-staging-d19ca-deployment",
+          "region": "us-east-2"
+        }
+      },
+      "api": {
+        "gameApi": {}
       }
     }
   }
