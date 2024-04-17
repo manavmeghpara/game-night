@@ -1,0 +1,15 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-gamenight-staging-d19ca-authRole",
+      "UnauthRoleArn": "arn:aws:iam::992382806989:role/amplify-gamenight-staging-d19ca-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::992382806989:role/amplify-gamenight-staging-d19ca-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-gamenight-staging-d19ca-deployment",
+      "UnauthRoleName": "amplify-gamenight-staging-d19ca-unauthRole",
+      "StackName": "amplify-gamenight-staging-d19ca",
+      "StackId": "arn:aws:cloudformation:us-east-2:992382806989:stack/amplify-gamenight-staging-d19ca/22814590-fc4e-11ee-8be7-06386d775d5d",
+      "AmplifyAppId": "d27z241cbka67b"
+    }
+  }
+}
