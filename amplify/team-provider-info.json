@@ -10,6 +10,11 @@
       "StackName": "amplify-gamenight-staging-d19ca",
       "StackId": "arn:aws:cloudformation:us-east-2:992382806989:stack/amplify-gamenight-staging-d19ca/22814590-fc4e-11ee-8be7-06386d775d5d",
       "AmplifyAppId": "d27z241cbka67b"
+    },
+    "categories": {
+      "auth": {
+        "gamenight009e67ad": {}
+      }
     }
   }
 }
